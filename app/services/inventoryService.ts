@@ -12,4 +12,11 @@ export class InventoryService {
         return await this.medicineRepository.findAll();
     }
 
+    async getMedicineById(id: number): Promise<MedicineModel | null> {
+        return await this.medicineRepository.findById(id);
+    }
+
+    async addMedicine(medicine: MedicineModel): Promise<MedicineModel> {
+        return await this.medicineRepository.create(medicine);
+    }
 }

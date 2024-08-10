@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'; 
 import { container } from 'tsyringe'; 
-// import { ProductService } from '../services';
+import { InventoryService } from '../services';
 
 export class InventoryController {
 

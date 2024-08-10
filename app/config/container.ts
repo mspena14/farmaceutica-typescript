@@ -4,13 +4,13 @@ import { PatientRepository, MedicineRepository, PrescriptionRepository } from '.
 
 
 container.registerSingleton<PatientRepository>(PatientRepository);
-container.registerSingleton<ProductCartService>(ProductCartService);
+// container.registerSingleton<ProductCartService>(ProductCartService);
 
 container.registerSingleton<MedicineRepository>(MedicineRepository);
 container.registerSingleton<InventoryService>(InventoryService);
 
 container.registerSingleton<PrescriptionRepository>(PrescriptionRepository);
-container.registerSingleton<UserService>(UserService);
+// container.registerSingleton<UserService>(UserService);
 
 
 export default container
