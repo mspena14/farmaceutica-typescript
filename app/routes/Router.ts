@@ -6,6 +6,6 @@ const router = Router();
 
 router.use('/inventory', inventoryRouter)
 router.use('/patients', patientRouter)
-router.use('/', prescriptionRouter)
+router.use('/prescriptions', prescriptionRouter)
 
 export default router;
